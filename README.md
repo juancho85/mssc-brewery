@@ -9,3 +9,7 @@ Udemy course:
     * Lombok
     * Spring Boot DevTools
     * Spring Boot Actuator
+* Enable annotation processing (Settings > Build, Execution, Deployment, Compiler, Annotation Processors)
+* Install Lombok Plugin
+	* Adds refactor Lombok/Delombok options to see generated code
+* Install MapStruct Support plugin
