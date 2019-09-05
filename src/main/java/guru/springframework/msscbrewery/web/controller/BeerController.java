@@ -20,7 +20,7 @@ public class BeerController {
     }
 
     @GetMapping({"/{beerId}"})
-    public ResponseEntity<BeerDto> getBeer(@PathVariable UUID beerId) {
+    public ResponseEntity<BeerDto> getBeer(@PathVariable("beerId") UUID beerId) {
         return new ResponseEntity<>(beerService.getBeerById(beerId), HttpStatus.OK);
     }
 
@@ -31,5 +31,11 @@ public class BeerController {
         // TODO: Get hostname to url
         headers.add("Location", "/api/v1/beer/" + savedDto.getId().toString());
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
+    }
+
+    @PutMapping({"/{beerId}"})
+    public ResponseEntity handleUpdate(@PathVariable("beerId") UUID beerId, BeerDto beerDto) {
+        beerService.updateBeer(beerId, beerDto);
+        return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
 }

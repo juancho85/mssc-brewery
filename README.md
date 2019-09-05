@@ -15,3 +15,14 @@ Udemy course:
 * Install MapStruct Support plugin
 * Install Axis TCP Monitor Plugin (https://plugins.jetbrains.com/plugin/154-axis-tcp-monitor-plugin/)
 * 
+
+## Developer tools
+* Added to project via spring-boot-devtools
+* Automatically disabled when running a packaged application (java -jar)
+* Restart are very fasts
+* Uses two classloaders. One for the application and another for the jar dependencies
+* IntelliJ: By default you need to select "build / make project", there is an advanced setting to make this more seamless
+* Developer tools will disable template caching so the restart is not required to see changes
+* LiveReload is a technology to automatically trigger a browser refresh when resources are changed
+* Spring Boot devTools include a liveReload server. Browser plugins are available for a free download at livereload.com
+* 
