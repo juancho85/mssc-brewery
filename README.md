@@ -13,3 +13,5 @@ Udemy course:
 * Install Lombok Plugin
 	* Adds refactor Lombok/Delombok options to see generated code
 * Install MapStruct Support plugin
+* Install Axis TCP Monitor Plugin (https://plugins.jetbrains.com/plugin/154-axis-tcp-monitor-plugin/)
+* 
